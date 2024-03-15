@@ -1,0 +1,11 @@
+[lang].localized {
+  display: none;
+}
+
+[lang=en].localized {
+  display: unset;
+}
+
+[lang=id].localized {
+  display: unset;
+}

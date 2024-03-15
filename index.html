@@ -1,0 +1,791 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title class="localized" lang="en">Defisme</title>
+
+  <link rel="shortcut icon" type="image/png" href="assets/images/top_logo.png"/>
+  <meta name="description" content="Decentralized Finance For SME Alliance"/>
+  <meta name="viewport"
+        content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0">
+  <meta name="theme-color" content="#dd920b"/>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://defisme.com">
+  <meta property="og:title" content="Defisme - Best Secure Decentralized Finance">
+  <meta property="og:description"
+        content="Decentralized Meme Token">
+  <meta property="og:image" content="https://defisme.com/assets/images/top-banner/top-banner-1.png">
+  <meta property="og:image:width" content="1920"/>
+  <meta property="og:image:height" content="1080"/>
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://defisme.com">
+  <meta property="twitter:title" content="Defisme - Best Secure Decentralized Finance">
+  <meta property="twitter:description"
+        content="Decentralized Meme Token">
+  <meta property="twitter:image"
+        content="https://defisme.com/assets/images/top-banner/top-banner-1.png">
+  <link rel="apple-touch-icon" href="assets/images/top_logo.png"/>
+
+
+  <style>
+    @keyframes loading-rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #loading {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 9999999;
+      background-color: #6b80da;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #loading svg {
+      animation: 0.6s loading-rotate linear infinite;
+    }
+  </style>
+
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"/>
+  <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons-1.5.css"/>
+  <script src="https://kit.fontawesome.com/bf4f05667a.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="vendor/fontawesome/css/all.css"/> -->
+  <link rel="stylesheet" href="vendor/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="vendor/slick/slick.css"/>
+  <link rel="stylesheet" href="vendor/animation/animate.css"/>
+  <link rel="stylesheet" href="vendor/venobox/venobox.css"/>
+  <link rel="stylesheet" href="vendor/flaticon/flaticon.css"/>
+  <link rel="stylesheet" href="vendor/arrow-font/flaticon.css"/>
+  <link rel="stylesheet" href="css/localization.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/overrides.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="js/localization.js"></script>
+
+</head>
+<body lang="en" id="home">
+
+  <div id="loading">
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px"
+         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path fill="#dd920b"d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"></path></svg>
+  </div>
+
+  <header id="page_top">
+    <div class="site-navigation menu-transparent">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-floating">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo_nav.png" class="img-fluid"/>
+            
+          </a>
+          <div style="display:flex; align-items: center;">
+            <div class="header-btn d-block d-lg-none nav-item dropdown header-mobile-btn">
+              <a href="javascript:;" id="change_lang" role="button" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="true"
+                 class="btn btn-radius btn-solid-border btn-lang dropdown-toggle">
+                <img width="30px" height="30px" class="change_lang"
+                     src="assets/images/lang/en.png"/>
+              </a>
+              <div class="dropdown-menu dropdown-lang" aria-labelledby="change_lang">
+                <div class="lang-list">
+                  <img src="assets/images/lang/en.png" onclick="localize('en')"/>
+                  <img src="assets/images/lang/ru.png" onclick="localize('ru')"/>
+                  <img src="assets/images/lang/id.png" onclick="localize('id')"/>                  
+                </div>
+              </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse mainmenu" id="navbarMenu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="#home" class="smooth-scroll nav-link">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#project" class="smooth-scroll nav-link">PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a href="#tokenomics" class="smooth-scroll nav-link">TOKENOMICS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#roadmap" class="smooth-scroll nav-link">ROADMAP</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://whitepaper.defisme.com/" class="smooth-scroll nav-link" target="_blank">WHITEPAPER</a>
+              </li>
+              <li class="nav-item">
+                <a href="#howtobuy" class="smooth-scroll nav-link">HOW TO BUY</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto social-icons">
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://t.me/defisme">
+                  <img src="assets/images/about/telegram.svg"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://twitter.com/defisme">
+                  <img src="assets/images/about/twitter.png"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://github.com/defisme">
+                  <img src="assets/images/about/github.png"/>
+                </a>
+              </li>
+              
+            </ul>
+            <!-- <div class="header-btn d-none d-md-block">
+              <a href="#howtobuy" class="smoth-scroll btn btn-radius btn-solid-border text-uppercase">How To Buy</a>
+            </div> -->
+            <div style="margin-left: 20px;"
+                 class="header-btn d-none d-md-block nav-item dropdown dropdown-lang-outer">
+              <a href="javascript:;" id="change_lang" role="button" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="true"
+                 class="btn btn-radius btn-solid-border btn-lang dropdown-toggle">
+                <img width="30px" height="30px" class="change_lang"
+                     src="assets/images/lang/en.png"/>
+              </a>
+              <div class="dropdown-menu dropdown-lang" aria-labelledby="change_lang">
+                <div class="lang-list">
+                  <img src="assets/images/lang/en.png" onclick="localize('en')"/>
+                  <img src="assets/images/lang/ru.png" onclick="localize('ru')"/>
+                  <img src="assets/images/lang/id.png" onclick="localize('id')"/>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner-2">
+    <div class="banner-main2 d-flex banner-bg align-items-center">
+      <div class="container">
+        <div class="counter" style="visibility: hidden;">
+          <div class="container">
+            <div class="row social-icons-body">
+              <ul class="navbar-nav social-icons">
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://t.me/defisme">
+                    <img src="assets/images/about/telegram.svg"/>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://twitter.com/defisme">
+                    <img src="assets/images/about/twitter.png"/>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://github.com/defisme">
+                    <img src="assets/images/about/github.png"/>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 banner-text">
+                <div class="banner-content-2">
+                  <h1 class="mb-40">DefiSME,<a style="color: #009afd">"Defi is ME"</h1>
+                  <p class="mb-40">
+                    <span class="inline-block localized" lang="en"><b style="color: #197ce6">DefiSME</b> is an ideology built on the core principles of blockchain technology, where interactions in the ecosystem are privacy rather than centralized. PRIVACY is non-negotiable. This is a Fundamental Human Right. Because Freedom is everything, then optional PRIVACY allows each person to choose who they want to share information with and who they want to interact with.because we believe that this is everyone's basic choice.</span>
+                    <span class="inline-block localized" lang="ru"><b style="color: #197ce6">ДефиМСП</b> стал одним из самых главных трендов в криптоиндустрии сегодня, позволяя пользователям проводить финансовые транзакции без необходимости третьих сторон, таких как банки или традиционные финансовые институты. В DeFi все транзакции децентрализованы через сеть блокчейн, что позволяет пользователям контролировать и иметь полный доступ к своим активам без зависимости от центральных органов.</span>
+                    <span class="inline-block localized" lang="id"><b style="color: #197ce6">DefiSME</b> adalah ideologi yang dibangun berdasarkan prinsip-prinsip inti teknologi blockchain, di mana interaksi dalam ekosistem bersifat pribadi dan bukan terpusat. PRIVACY tidak dapat dinegosiasikan, ini adalah Hak Asasi Manusia yang mendasar. Karena kebebasan adalah segalanya, maka PRIVACY opsional memungkinkan setiap orang untuk memilih dengan siapa mereka ingin berbagi informasi dan dengan siapa mereka ingin berinteraksi. Kami percaya bahwa ini adalah pilihan dasar setiap orang.</span>
+                    
+                    <br>
+                    <span class="inline-block localized" lang="en"><b style="color: #197ce6">DefiSME</b>  is a Decentralized Financial System for everyone but this campaign was created to support SME to develop sustainably through the use of technology called Blockchain.</span>
+                    <span class="inline-block localized" lang="ru"><b style="color: #197ce6">ДефиМСП</b> это децентрализованная финансовая система для всех, но эта кампания была создана для поддержки устойчивого развития малого и среднего бизнеса за счет использования технологии под названием Blockchain.</span>
+                    <span class="inline-block localized" lang="id"><b style="color: #197ce6">DefiSME</b> adalah Sistem Keuangan Terdesentralisasi untuk semua orang tetapi kampanye ini dibuat untuk mendukung UKM agar berkembang secara berkelanjutan melalui penggunaan teknologi yang disebut Blockchain.</span>
+                  
+                    <br>
+                    <span class="inline-block localized" lang="en"><b style="color: #197ce6">DefiSME</b> has become one of the biggest trends in the crypto industry today, allowing users to conduct financial transactions without the need for third parties such as banks or traditional financial institutions. In DeFi, all transactions are decentralized through a blockchain network, which enables users to control and have full access to their assets without depending on central authorities.</span>
+                    <span class="inline-block localized" lang="ru"><b style="color: #197ce6">ДефиМСП</b> стала одной из крупнейших тенденций в криптоиндустрии сегодня, позволяя пользователям проводить финансовые транзакции без необходимости использования третьих сторон, таких как банки или традиционные финансовые учреждения. В DeFi все транзакции децентрализованы через сеть блокчейнов, что позволяет пользователям контролировать свои активы и иметь полный доступ к ним, не завися от центральных органов власти.</span>
+                    <span class="inline-block localized" lang="id"><b style="color: #197ce6">DeFisme</b> telah menjadi salah satu tren terbesar dalam industri kripto saat ini, memungkinkan pengguna melakukan transaksi keuangan tanpa memerlukan pihak ketiga seperti bank atau lembaga keuangan tradisional. Di DeFi, semua transaksi didesentralisasi melalui jaringan blockchain, yang memungkinkan pengguna untuk mengontrol dan memiliki akses penuh ke aset mereka tanpa bergantung pada otoritas pusat.</span>
+                    
+                    <br>
+                    <span class="inline-block localized" lang="en"><b style="color: #197ce6"> DefiSME..</b> DEFI for ME, Defi for sustainable SMEs, Defi for You and Defi For Everyone!</span>
+                    <span class="inline-block localized" lang="ru"><b style="color: #197ce6"> ДефиМСП..</b>ДЕФИ для МЕНЯ, Defi для устойчивых МСП, Defi для вас и Defi для всех!</span>
+                    <span class="inline-block localized" lang="id"><b style="color: #197ce6"> DefiSME..</b>DEFI untuk SAYA, Defi untuk UKM berkelanjutan, Defi untuk Anda, dan Defi Untuk Semua Orang!</span>
+                    
+                    <br>
+                    <span class="inline-block localized" lang="en"><b style="color: #ffff00"> Let's explore ALL options TOGETHER</b> Because you are IMPORTANT to US. It's time for us to collaborate with you in harnessing the potential behind this technology.</span>
+                    <span class="inline-block localized" lang="ru"><b style="color: #ffff00"> Давайте рассмотрим ВСЕ варианты ВМЕСТЕ</b> Потому что вы ВАЖНЫ для НАС. Пришло время нам сотрудничать с вами в использовании потенциала этой технологии.</span>
+                    <span class="inline-block localized" lang="id"><b style="color: #ffff00"></b> Mari jelajahi SEMUA pilihan BERSAMA</b> Karena Anda PENTING bagi KAMI. Saatnya kami berkolaborasi dengan Anda dalam memanfaatkan potensi di balik teknologi ini.</span>
+                    
+                    <br>
+                    <span class="inline-block localized" lang="en"><b style="color: #ffff00"> Join us..</b> WHEN you like, WHY you like, and, for as long as you like. Because we believe Decentralized Financial System for everyone. For Them, Us, and You.</span>
+                    <span class="inline-block localized" lang="ru"><b style="color: #ffff00"> Присоединяйтесь к нам..</b> КОГДА вам нравится, ПОЧЕМУ вам нравится, и так долго, как вам нравится. Потому что мы считаем, что децентрализованная финансовая система доступна каждому. Для них, нас и вас.</span>
+                    <span class="inline-block localized" lang="id"><b style="color: #ffff00"> Bergabunglah dengan kami..</b> KETIKA Anda suka, MENGAPA Anda suka, dan, selama yang Anda suka. Karena kami percaya Sistem Keuangan Terdesentralisasi untuk semua orang. Untuk Mereka, Kami, dan Anda.</span>
+                    
+                    <br>
+                  </p>
+                  <div class="banner-buttons">
+                    <a target="_blank" href="https://www.cryptopreneur.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD" class="inline-block btn btn-main btn-radius localized" lang="en">BUY $DSME</a>
+                    <a target="_blank" href="https://www.cryptopreneur.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD" class="inline-block btn btn-main btn-radius localized" lang="ru">КУПИТЬ $DSME</a>
+                    <a target="_blank" href="https://www.cryptopreneur.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD" class="inline-block btn btn-main btn-radius localized" lang="id">BELI $DSME</a>
+
+                    <a target="_blank" href="https://www.dexview.com/bsc/0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD" class="inline-block btn btn-solid-border text-uppercase btn-radius localized" lang="en">View Chart</a>
+                    <a target="_blank" href="https://www.dexview.com/bsc/0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD" class="inline-block btn btn-solid-border text-uppercase btn-radius localized" lang="ru">Посмотреть диаграмму</a>
+                    <a target="_blank" href="https://www.dexview.com/bsc/0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD" class="inline-block btn btn-solid-border text-uppercase btn-radius localized" lang="id">Lihat Chart</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 banner-cover-container">
+                <div class="d-xl-block">
+                  <div class="banner-cover">
+                    <div class="cover"></div>
+                    <img class="cover-top" src="assets/images/banner/wallet.png"/>
+                    <img class="cover-bottom" src="assets/images/banner/dex.png"/>
+                    <img class="cover-left" src="assets/images/banner/defi.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="project" class="pt-40 section service-2">
+    <div class="l-shape l-shape-1-1"></div>
+    <div class="l-shape l-shape-1-2"></div>
+    <div class="l-shape l-shape-1-3"></div>
+    <div class="l-shape l-shape-2-1"></div>
+    <div class="l-shape l-shape-2-2"></div>
+    <div class="l-shape l-shape-2-3"></div>
+    <div class="l-shape l-shape-3-1"></div>
+    <div class="l-shape l-shape-3-2"></div>
+    <div class="l-shape l-shape-3-3"></div>
+    <div class="l-shape l-shape-4-1"></div>
+    <div class="l-shape l-shape-4-2"></div>
+    <div class="l-shape l-shape-4-3"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="section-heading text-center mb-80 text-center">
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="en" data-wow-delay="0s">Experience the difference with DSME.</span>
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="ru" data-wow-delay="0s">Почувствуйте разницу с DSME.</span>
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="id" data-wow-delay="0s">Rasakan perbedaannya dengan DSME.</span>
+
+            <h2 class="block wow flipInX localized" lang="en" data-wow-delay=".1s">Why DSME ?</h2>
+            <h2 class="block wow flipInX localized" lang="ru" data-wow-delay=".1s">Почему DSME ?</h2>
+            <h2 class="block wow flipInX localized" lang="id" data-wow-delay=".1s">Mengapa DSME ?</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="row service-2-container wow flipInX" data-wow-delay=".3s">
+        <div class="col-xl-4 col-lg-6 col-md-8">
+          <div class="text-center service-item2 mb-80 vine-bg-1">
+            <div class="icon-box2 first-icon">
+              <i class="fa fa-ribbon"></i>
+<!--              <i class="flaticon flaticon-database-storage"></i>-->
+            </div>
+            <h3 class="block text-uppercase localized" lang="en">Dedicated Teams</h3>
+            <h3 class="block text-uppercase localized" lang="ru">Выделенный разработчик</h3>
+            <h3 class="block text-uppercase localized" lang="id">Pengembang yang berdedikasi</h3>
+            
+            <p class="block localized" lang="en">DSME's main development team consists of three experienced blockchain developers, with a combined total of over 5 years of active blockchain development starting from basic POW, POS & Masternode technologies. They have helped many Ecosystem developers to implement Blockchain Technology through the development of Smart Contract based DEFI projects over the past three years.</p>
+            <p class="block localized" lang="ru">Основная команда разработчиков DSME состоит из трех опытных разработчиков блокчейнов, имеющих в общей сложности более 5 лет активного развития блокчейнов, начиная с базовых технологий POW, POS и мастернод. За последние три года они помогли многим разработчикам экосистемы внедрить технологию блокчейн посредством разработки проектов DEFI на основе смарт-контрактов.</p>
+            <p class="block localized" lang="id">Tim pengembangan utama DSME terdiri dari tiga pengembang blockchain berpengalaman, dengan total gabungan lebih dari 5 tahun pengembangan blockchain aktif mulai dari teknologi dasar POW, POS & Masternode. Mereka telah membantu banyak pengembang Ekosistem untuk menerapkan Teknologi Blockchain melalui pengembangan proyek DEFI berbasis Kontrak Cerdas selama tiga tahun terakhir.</p>
+
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-8">
+          <div class="text-center service-item2 mb-80">
+            <div class="icon-box2 second-icon">
+              <i class="fa fa-users"></i>
+<!--              <i class="flaticon flaticon-connection"></i>-->
+            </div>
+            <h3 class="block text-uppercase localized" lang="en">Built-in Community Governance</h3>
+            <h3 class="block text-uppercase localized" lang="ru">Децентрализованная биржа Defisme</h3>
+            <h3 class="block text-uppercase localized" lang="id">Tata Kelola Komunitas yang Terintegrasi</h3>
+
+            <p class="block localized" lang="en">DSME's Community governance model includes a blockchain-based system that utilizes a Smart Contract Program to Help many people become familiar with Blockchain Technology.</p>
+            <p class="block localized" lang="ru">Модель управления сообществом DSME включает базовую систему блокчейна, которая использует смарт-контракты, помогая многим людям познакомиться с технологией блокчейн.</p>
+            <p class="block localized" lang="id">Model tata kelola komunitas DSME mencakup sistem dasar blockchain yang memanfaatkan Kontrak Cerdas dalam Membantu banyak orang mengenal Teknologi Blockchain.</p>
+            
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-8">
+          <div class="text-center service-item2 mb-80 vine-bg-2">
+            <div class="icon-box2 third-icon">
+              <i class="fa fa-hands-helping"></i>
+
+            </div>
+            <h3 class="block text-uppercase localized" lang="en">Created to Help More people</h3>
+            <h3 class="block text-uppercase localized" lang="ru">Создано, чтобы помочь большему количеству людей</h3>
+            <h3 class="block text-uppercase localized" lang="id">Dibuat untuk Membantu Lebih Banyak orang</h3>
+
+            <p class="block localized" lang="en">Developers routinely provide extra support in the form of research and analysis to find solutions for every community developer who has lost direction in building an ecosystem because the project was abandoned by the previous developer.</p>
+            <p class="block localized" lang="ru">Разработчики регулярно предоставляют дополнительную поддержку в форме исследований и анализа, чтобы найти решения для каждого разработчика сообщества, который потерял направление в построении экосистемы из-за того, что предыдущий разработчик отказался от проекта.</p>
+            <p class="block localized" lang="id">Pengembang secara rutin memberikan Dukungan Support secara ekstra berupa penelitian dan analisis untuk mencari solusi bagi setiap Pengembang Komunitas yang kehilangan arah dalam membangun ekosistem karena proyeknya ditinggalkan oleh pengembang sebelumnya.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokenomics" class="about2 pt-80 section pb-110">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="section-heading text-center mb-50 text-xl-left overflow-hidden">
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="en" data-wow-delay="0s">Tokenomics</span>
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="ru" data-wow-delay="0s">Токеномика</span>
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="id" data-wow-delay="0s">Tokenomics</span>
+              
+            <h2 class="block wow flipInX mb-40 localized" lang="en" data-wow-duration="1s" data-wow-delay=".2s">Defisme TOKEN</h2>
+            <h2 class="block wow flipInX mb-40 localized" lang="ru" data-wow-duration="1s" data-wow-delay=".2s">ТОКЕН ДЕФИСМЕ</h2>
+            <h2 class="block wow flipInX mb-40 localized" lang="id" data-wow-duration="1s" data-wow-delay=".2s">Defisme TOKEN</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10">
+          <div class="about-content-wrapper mb-5 mb-xl-0">
+            <p class="block localized" lang="en"><b>Name: Defisme</b></p>
+            <p class="block localized" lang="ru">Название: Defisme</p>
+            <p class="block localized" lang="id">Nama: Defisme</p>
+
+            <p class="block localized" lang="en">Symbol: DSME</p>
+            <p class="block localized" lang="ru">Символ: DSME</p>
+            <p class="block localized" lang="id">Simbol: DSME</p>
+
+            <p class="block localized" lang="en">Total Supply: 24.000.000</p>
+            <p class="block localized" lang="ru">Общий объем поставок : 24.000.000</p>
+            <p class="block localized" lang="id">Supply Keseluruhan : 24.000.000</p>
+
+            <p class="block localized" lang="en">Max Supply: 18.000.000</p>
+            <p class="block localized" lang="ru">максимальное предложение: 18.000.000</p>
+            <p class="block localized" lang="id">Supplay Maks : 18.000.000</p>
+
+            <p class="block localized" lang="en"><a href="https://www.pinksale.finance/pinklock/detail/0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD?chain=BSC">Locked/Reserve Supply: 6.000.000</a></p>
+            <p class="block localized" lang="ru"><a href="https://www.pinksale.finance/pinklock/detail/0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD?chain=BSC">План сжигания: 6.000.000</a></p>
+            <p class="block localized" lang="id"><a href="https://www.pinksale.finance/pinklock/detail/0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD?chain=BSC">Persediaan Terkunci/cadangan : 6.000.000</a></p>
+
+            <p class="block localized" lang="en"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd#events">Burn Plan: 6.000.000</a></p>
+            <p class="block localized" lang="ru"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd#events">ЗАКРЫТО/РЕЗЕРВНОЕ ПИТАНИЕ: 6.000.000</a></p>
+            <p class="block localized" lang="id"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd#events">Rencana Pembakaran : 6.000.000</a></p>
+          
+            <p class="block localized" lang="en">Decimal: 18</p>
+            <p class="block localized" lang="ru">Десятичная дробь: 8</p>
+            <p class="block localized" lang="id">Desimal: DSME</p>
+
+            <p class="block localized" lang="en"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd">Contract Address: 0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD</a></p>
+            <p class="block localized" lang="ru"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd">Адрес контракта: 0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD</a></p>
+            <p class="block localized" lang="id"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd">Alamat Kontrak: 0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD</a></p>
+
+            <p class="block localized" lang="en">Network: Binance Smart Chain (BEP20)</p>
+            <p class="block localized" lang="ru">Сеть: Binance Smart Chain (BEP20)</p>
+            <p class="block localized" lang="id">Jaringan: Binance Smart Chain (BEP20)</p>
+            
+            <p class="block localized" lang="en">Based on the BNB Smart Chain Network, Defisme tokenomics are designed for optimum return</p>
+            <p class="block localized" lang="ru">Токеномика Defisme, основанная на сети BNB Smart Chain, предназначена для оптимальной отдачи.</p>
+            <p class="block localized" lang="id">Berdasarkan jaringan BNB Smart Chain, tokenomics Defisme dirancang untuk pengembalian optimal</p>
+            
+            <ul>
+              <li class="list-item localized" lang="en">25% PROJECT UTILITY</li>
+              <li class="list-item localized" lang="ru">25% ПОЛЕЗНОСТИ ПРОЕКТА</li>
+              <li class="list-item localized" lang="id">25% UTILITAS PROYEK</li>
+
+              <li class="list-item localized" lang="en">25% LOCKED/RESERVE SUPPLY</li>
+              <li class="list-item localized" lang="ru">25% ЗАКРЫТО/РЕЗЕРВНОЕ ПИТАНИЕ</li>
+              <li class="list-item localized" lang="id">25% PERSEDIAAN TERKUNCI/CADANGAN</li>
+
+              <li class="list-item localized" lang="en">25% BURN SUPPLY</li>
+              <li class="list-item localized" lang="ru">25% АИРДРОП/РОЗЫГРЫШ</li>
+              <li class="list-item localized" lang="id">25% SUPPLY PEMBAKARAN</li>
+
+              <li class="list-item localized" lang="en">10% AIRDROP/GIVEAWAY</li>
+              <li class="list-item localized" lang="ru">10% АИРДРОП/РОЗЫГРЫШ</li>
+              <li class="list-item localized" lang="id">10% AIRDROP/GIVEAWAL</li>
+
+              <li class="list-item localized" lang="en">5% DEX-CEX</li>
+              <li class="list-item localized" lang="ru">5% ДЕКСЫ/СЕКСЫ</li>
+              <li class="list-item localized" lang="id">5% DEX-CEX</li>
+
+              <li class="list-item localized" lang="en">5% POOL</li>
+              <li class="list-item localized" lang="ru">5% БАССЕЙН</li>
+              <li class="list-item localized" lang="id">5% KOLAM</li>
+
+              <li class="list-item localized" lang="en">3% MARKETING</li>
+              <li class="list-item localized" lang="ru">3% МАРКЕТИНГ</li>
+              <li class="list-item localized" lang="id">3% PEMASARAN </li>
+
+              <li class="list-item localized" lang="en">2% DEV</li>
+              <li class="list-item localized" lang="ru">2% Команда разработчиков</li>
+              <li class="list-item localized" lang="id">2% TIM DEVELOPER</li>
+
+            </ul>
+            
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8 pl-lg-0 pr-lg-0 mt-auto mb-auto pi-chart-col">
+          <div class="about-img2 mt-5 mt-xl-0 wow zoomIn" data-wow-delay=".2s">
+            <img src="assets/images/about/tokenomic.png" class="float-wrap" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process2 pt-110 pb-80 section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="section-heading text-center mb-70">
+            <span class="text-primary text-uppercase mb-10 d-inline-block wow slideInUp"
+                  data-wow-duration="1s" data-wow-delay="0s"></span>
+            <h2 class="block wow flipInX localized" lang="en" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Contract Description</h2>
+            <h2 class="block wow flipInX localized" lang="ru" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Функции</h2>
+            <h2 class="block wow flipInX localized" lang="id" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Deskripsi Kontrak</h2>
+           
+          </div>
+        </div>
+      </div>
+      <div class="row process-2-item">
+        <div class="col-lg-6 col-md-12">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <div class="process-icon"><i class="fa fa-coins"></i></div>
+                <h3 class="block text-uppercase localized" lang="en">Native Token</h3>
+                <h3 class="block text-uppercase localized" lang="ru">НАТИВНЫЙ ТОКЕН</h3>
+                <h3 class="block text-uppercase localized" lang="id">Token Asli</h3>
+
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">DSME is the main token that will be used in all Defisme ecosystems and transactions</p>
+              <p class="block localized" lang="ru">DSME — это основной токен, который будет использоваться во всех экосистемах и транзакциях Defisme.</p>
+              <p class="block localized" lang="id">DSME adalah token utama yang akan digunakan di seluruh ekosistem dan transaksi Defisme</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row right process-2-item">
+        <div class="col-lg-6 col-md-12 ml-auto">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <h3 class="block text-uppercase localized" lang="en">Proof of Concern</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Доказательство беспокойства</h3>
+                <h3 class="block text-uppercase localized" lang="id">Bukti Kepedulian</h3>
+
+                <div class="process-icon"><i class="fa fa-hand-holding-heart"></i></div>
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">DSME was created to help people from developers who left their communities.</p>
+              <p class="block localized" lang="ru">DSME был создан, чтобы помочь людям из разработчиков, покинувшим свои сообщества..</p>
+              <p class="block localized" lang="id">DSME diciptakan untuk membantu orang-orang dari pengembang yang meninggalkan komunitasnya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row process-2-item">
+        <div class="col-lg-6 col-md-12">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <div class="process-icon"><i class="fa fa-toolbox"></i></div>
+                <h3 class="block text-uppercase localized" lang="en">Fixed Total Supply</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Фиксированная поставка</h3>
+                <h3 class="block text-uppercase localized" lang="id">Pasokan Total Tetap</h3>
+
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">The total supply remains constant without Minting and can only be burned which of course will greatly affect price volatility</p>
+              <p class="block localized" lang="ru">Общий объем поставок остается постоянным без чеканки и может быть только сожжен, что, конечно, сильно повлияет на волатильность цен.</p>
+              <p class="block localized" lang="id">Total pasokan tetap konstan tanpa pencetakan ulang dan hanya bisa pembakaran yang akan mempengaruhi volatilitas harga</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row right process-2-item">
+        <div class="col-lg-6 col-md-12 ml-auto">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <h3 class="block text-uppercase localized" lang="en">No Tax Transaction</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Нет налоговой операции</h3>
+                <h3 class="block text-uppercase localized" lang="id">Tanpa Pajak Transaksi</h3>
+
+                <div class="process-icon"><i class="fa fa-ban"></i></div>
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">Without a transaction tax when transferring, buying and selling will make it easier for holders to make frequent transactions</p>
+              <p class="block localized" lang="ru">Без налога на транзакции при передаче, покупке и продаже держателям будет проще совершать частые транзакции.</p>
+              <p class="block localized" lang="id">Tanpa pajak transaksi pada saat transfer, jual beli akan memudahkan pemegangnya untuk sering bertransaksi.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row process-2-item">
+        <div class="col-lg-6 col-md-12">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <div class="process-icon"><i class="fas fa-user-shield"></i></div>
+                <h3 class="block text-uppercase localized" lang="en">No Hidden Fee</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Нет скрытой платы</h3>
+                <h3 class="block text-uppercase localized" lang="id">Tidak Ada Biaya Tersembunyi</h3>
+
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">DSME is committed to its holders and will not provide hidden fees in every transaction</p>
+              <p class="block localized" lang="ru">DSME привержен своим держателям и не будет взимать скрытые комиссии за каждую транзакцию.</p>
+              <p class="block localized" lang="id">DSME berkomitmen kepada pemegangnya dan tidak akan memberikan biaya tersembunyi dalam setiap transaksi.</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="roadmap" class="roadmap pt-110 pb-80 section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="section-heading text-center mb-70">
+            <h2 class="block wow flipInX localized" lang="en" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">RoadMap 2023</h2>
+            <h2 class="block wow flipInX localized" lang="ru" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Дорожная карта2023 </h2>
+            <h2 class="block wow flipInX localized" lang="id" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Peta Perjalanan 2023</h2>
+
+          </div>
+        </div>
+      </div>
+      <div style="justify-content: center;" class="row roadmap-list wow fadeInUp">
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">Crypto Community Collaboration has reached a Point of Aggreement</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Сотрудничество криптосообщества достигло точки соглашения</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="id">Kolaborasi Komunitas Crypto telah mencapai titik kesepakatan</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">Data Collection and Identification of old Token Holders</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Сбор данных и идентификация старых держателей токенов</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="id">Pengumpulan Data dan Identifikasi Pemegang Token lama</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">Deployment DSME & Official Website Launch</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Развертывание DSME и запуск официального веб-сайта</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="id">Peluncuran DSME & Situs Web Resmi</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">Bulk Send DSME to Bridge the exchange of Old Tokens to New Tokens.</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Массовая отправка DSME для обмена старых токенов на новые токены</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="id">Kirim Massal DSME untuk Menjembatani pertukaran Token Lama ke Token Baru</div> 
+                
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">DEX Listing to get First Open Price  (First Price by LP)</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Листинг DEX для получения первой цены открытия (первая цена от LP)</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="id">Listing DEX untuk Harga Pembukaan Pertama (Harga Pertama berdasarkan LP)</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">DEX Listing Pool & Farm for DSME</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Листинговый пул и ферма DEX для DSME</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="id">Listing Pool & Farm DSME di DEX</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">Launch of DSME for Crypto Community Development</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Запуск DSME для развития криптосообщества</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="id">Peluncuran DSME untuk Pengembangan Komunitas Kripto</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Community Campaign Push</div>
+          <div class="flex roadmap-item localized" lang="ru">Продвижение кампании сообщества</div>
+          <div class="flex roadmap-item localized" lang="id">Penekanan Kampanye Komunitas</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">C-HUB Opening for Community Expansion</div>
+          <div class="flex roadmap-item localized" lang="ru">Открытие C-HUB для расширения сообщества</div>
+          <div class="flex roadmap-item localized" lang="id">Pembukaan C-HUB untuk Perluasan Komunitas</div>
+          
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Opening of the Cryptopreneur Community Representative Office</div>
+          <div class="flex roadmap-item localized" lang="ru">Открытие представительства сообщества криптопредпринимателей</div>
+          <div class="flex roadmap-item localized" lang="id">Pembukaan Kantor Perwakilan Komunitas Cryptopreneur</div>
+        
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Total Liquidity Volume for DSME in Cryptopreneur Finance USD 50K </div>
+          <div class="flex roadmap-item localized" lang="ru">Общий объем ликвидности для DSME в сфере Cryptopreneur Finance составляет 50 тыс. долларов США.</div>
+          <div class="flex roadmap-item localized" lang="id">Total Volume Likuiditas untuk DSME di Cryptopreneur Finance USD 50K</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">More Features for DSME Utility Projects</div>
+          <div class="flex roadmap-item localized" lang="ru">Дополнительные возможности для служебных проектов DSME</div>
+          <div class="flex roadmap-item localized" lang="id">Lebih Banyak Fitur untuk Proyek Utilitas DSME</div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="howtobuy" class="pt-110 pb-80 section howtobuy">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="section-heading text-center mb-70">
+            <h2 class="block wow flipInX localized" lang="en" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">How To Buy $DSME ?</h2>
+            <h2 class="block wow flipInX localized" lang="ru" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Как купить $DSME?</h2>
+            <h2 class="block wow flipInX localized" lang="id" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Bagaimana Beli $DSME ?</h2>
+            
+          </div>
+        </div>
+      </div>
+      <div style="justify-content: center;" class="row">
+        <div class="col-xl-1 d-none d-xl-block howtobuy-cover">
+          <img class="howtobuy-logo wow zoomIn" data-wow-delay="1s" data-wow-duration="2s"
+               src="assets/images/howtobuy/logo_new.png"/>
+          <img class="howtobuy-wallet wow zoomIn" data-wow-delay="1.2s" data-wow-duration="2s"
+               src="assets/images/howtobuy/wallet.png"/>
+        </div>
+        <div class="col-xl-8 buy-list">
+          <div class="wow slideInUp">
+            <div class="buy-item">
+              <div class="item-title"><i>1</i>
+                <div>Cryptopreneur Finance</div>
+              </div>
+              <ul class="howtobuy-ulist">
+                <li class="list-item localized" lang="en">Desktop: Download Metamask.io Google Chrome extension and create a wallet (remember to secure your private keys!). Access exchange cryptopreneur.finance online and connect to Metamask wallet.</li>
+                <li class="list-item localized" lang="ru">Рабочий стол: загрузите расширение metamask.io для Google Chrome и создайте кошелек (не забудьте защитить свои личные ключи!). Получите доступ Обмен cryptopreneur.finance онлайн и подключитесь к кошельку Metamask.</li>
+                <li class="list-item localized" lang="id">Desktop: Unduh ekstensi Google Chrome metamask.io dan buat dompet (ingatlah untuk mengamankan kunci pribadi Anda!). Akses exchange cryptopreneur.finance online dan sambungkan ke dompet metamask.</li>
+                
+                <li class="list-item localized" lang="en">Mobile: Android - Download Trustwallet app and access exchange cryptopreneur.finance through the browser dApp.</li>
+                <li class="list-item localized" lang="ru">Мобильный: Android - загрузите приложение Trustwallet и получите доступ к exchange cryptopreneur.finance через dApp браузера.</li>
+                <li class="list-item localized" lang="id">Mobile: Android - Download aplikasi Trustwallet dan akses exchange cryptopreneur.finance melalui browser dApp.</li>
+                
+              </ul>
+            </div>
+            <div class="buy-item">
+              <div class="item-title"><i>2</i>
+                <div>Binance Smart Coin</div>
+              </div>
+              <div class="block item-content localized" lang="en">Add BSC Mainnet Network to your Metamask and buy $BNB to add to your wallet.</div>
+              <div class="block item-content localized" lang="ru">Добавьте сеть BSC Mainnet в свою метамаску и купите $ BNB, чтобы добавить в свой кошелек.</div>
+              <div class="block item-content localized" lang="id">Tambahkan BSC Mainnet Network di  Metamask Anda  dan  Beli $BNB untuk  ditambahkan di wallet anda.</div>
+              
+            </div>
+            <div class="buy-item">
+              <div class="item-title"><i>3</i>
+                <div class="block localized" lang="en">Swap $BNB for $DSME</div>
+                <div class="block localized" lang="ru">Обменять $BNB на $DSME</div>
+                <div class="block localized" lang="id">Tukarkan $BNB dengan $DSME</div>
+                
+              </div>
+              <div class="block item-content localized" lang="en">On cryptopreneur.finance, choose BNB then choose "Select a currency" → "Manage Tokens" at the bottom → "Tokens" tab and enter $DSME Contract address to "Add" to your list.</div>
+              <div class="block item-content localized" lang="ru">На cryptopreneur.finance выберите BNB, затем выберите «Выбрать валюту» → «Управление токенами» внизу → вкладка «Токены» и введите адрес контракта $ DSME, чтобы «Добавить» в свой список.</div>
+              <div class="block item-content localized" lang="id">Di cryptopreneur.finance, Pilih BNB lalu Pilih "Select a currency" → "Manage Tokens" di Bagian Bawah → "Tokens" tab kemudian enter $DSME Contract address to "Add" di list anda.</div>
+              
+              <!--              TODO: translate-->
+              <ul class="howtobuy-ulist indented-further">
+                <li class="list-item localized" lang="en"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd">Contract: <span style="color:#ffff00 ">0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd</span></a></li>
+                <li class="list-item localized" lang="ru"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd">Договор: <span style="color:#ffff00 ">0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd</span></a></li>
+                <li class="list-item localized" lang="id"><a href="https://bscscan.com/address/0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd">Kontrak: <span style="color:#ffff00 ">0x870ff3ce5ec4ada4b53a044ca9dd5ca85d5b23fd</span></a></li>
+                 
+                <li class="list-item localized" lang="en">Note: set slippage to 1-2% before swapping</li>
+                <li class="list-item localized" lang="ru">Примечание: перед заменой установите проскальзывание на 1-2%.</li>
+                <li class="list-item localized" lang="id">Note: set slippage to 1-2% sebelum menukarkan</li>
+
+                <li class="list-item localized" lang="en"><a href="https://www.cryptopreneur.finance/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&outputCurrency=0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD">BUY $DSME <span style="color:#ffff00 ">NOW !!!</span></a></li>
+                <li class="list-item localized" lang="ru"><a href="https://www.cryptopreneur.finance/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&outputCurrency=0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD">КУПИТЬ $DSME <span style="color:#ffff00 ">сейчас !!! </span></a></li>
+                <li class="list-item localized" lang="id"><a href="hhttps://www.cryptopreneur.finance/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&outputCurrency=0x870FF3CE5Ec4adA4B53A044ca9DD5CA85D5B23fD">BELI $DSME <span style="color:#ffff00 ">SEKARANG!!! </span></a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 d-none d-xl-block howtobuy-cover">
+          <img class="howtobuy-user slide-top"
+               src="assets/images/howtobuy/jumping-man.png"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5">
+            <p class="block copyright text-center text-xl-left text-lg-left localized" lang="en">Copyright © 2023 Defisme.com All Rights Reserved</p>
+            <p class="block copyright text-center text-xl-left text-lg-left localized" lang="ru">Copyright © 2023 Defisme.com Все права защищены.</p>
+            <p class="block copyright text-center text-xl-left text-lg-left localized" lang="id">Copyright © 2023 Defisme.com Hak Cipta Keseluruhan.</p>
+
+          </div>
+          <div class="col-xl-7 col-lg-7">
+            <div class="footer-socials text-center text-xl-right text-lg-right">
+              <a target="_blank" href="https://t.me/defisme">
+                <img src="assets/images/about/telegram.svg"/>
+              </a>
+              <a target="_blank" href="https://twitter.com/defisme">
+                <img src="assets/images/about/twitter.png"/>
+              </a>
+              <a target="_blank" href="https://github.com/defisme">
+                <img src="assets/images/about/github.png"/>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed-btm-top">
+    <a href="#page_top" class="smoth-scroll scroll-to-top bg-shadow">
+      <i class="fa fa-angle-up"></i></a></div>
+
+
+  <script src="js/core.min.js"></script>
+  <script src="js/home.min.js"></script>
+</body>
+</html>
